@@ -1,6 +1,6 @@
 class Life_atm_management {
     idd = 2700; // test comment
-    name= "life_atm_menu";
+    name= "life_atm_menu"; //Test Life Menu
     movingEnable = 0;
     enableSimulation = 1;
 
