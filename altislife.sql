@@ -12,7 +12,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Creates database `altislife` unless it already exists and uses `altislife`
+-- Database: `altislife`
 -- Default Schema
 --
 CREATE DATABASE IF NOT EXISTS `altislife` DEFAULT CHARACTER SET utf8mb4;
@@ -26,42 +26,37 @@ DROP PROCEDURE IF EXISTS `deleteDeadVehicles`;
 DROP PROCEDURE IF EXISTS `deleteOldHouses`;
 DROP PROCEDURE IF EXISTS `deleteOldGangs`;
 DROP PROCEDURE IF EXISTS `deleteOldContainers`;
-DROP PROCEDURE IF EXISTS `deleteOldWanted`;
 
 DELIMITER $$
 --
 -- Procedures
--- CURRENT_USER function returns the name of the current user in the SQL Server database.
+-- Edit arma3 to match a user in MySQL
+-- For external databases: Edit localhost to match arma3server IP
 --
 
-CREATE DEFINER=CURRENT_USER PROCEDURE `resetLifeVehicles`()
+CREATE DEFINER=`arma3`@`localhost` PROCEDURE `resetLifeVehicles`()
 BEGIN
   UPDATE `vehicles` SET `active`= 0;
 END$$
 
-CREATE DEFINER=CURRENT_USER PROCEDURE `deleteDeadVehicles`()
+CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteDeadVehicles`()
 BEGIN
   DELETE FROM `vehicles` WHERE `alive` = 0;
 END$$
 
-CREATE DEFINER=CURRENT_USER PROCEDURE `deleteOldHouses`()
+CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldHouses`()
 BEGIN
   DELETE FROM `houses` WHERE `owned` = 0;
 END$$
 
-CREATE DEFINER=CURRENT_USER PROCEDURE `deleteOldGangs`()
+CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldGangs`()
 BEGIN
   DELETE FROM `gangs` WHERE `active` = 0;
 END$$
 
-CREATE DEFINER=CURRENT_USER PROCEDURE `deleteOldContainers`()
+CREATE DEFINER=`arma3`@`localhost` PROCEDURE `deleteOldContainers`()
 BEGIN
   DELETE FROM `containers` WHERE `owned` = 0;
-END$$
-
-CREATE DEFINER=CURRENT_USER PROCEDURE `deleteOldWanted`()
-BEGIN
-  DELETE FROM `wanted` WHERE `active` = 0;
 END$$
 
 DELIMITER ;
@@ -209,15 +204,6 @@ CREATE TABLE IF NOT EXISTS `wanted` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
---
--- Creates default user `arma3` with password `changeme` unless it already exists
--- Granting permissions to user `arma3`, created below
--- Reloads the privileges from the grant tables in the MySQL system database.
---
-
-CREATE USER IF NOT EXISTS `arma3`@`localhost` IDENTIFIED BY 'changeme';
-GRANT SELECT, UPDATE, INSERT, EXECUTE ON `altislife`.* TO 'arma3'@'localhost';
-FLUSH PRIVILEGES;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

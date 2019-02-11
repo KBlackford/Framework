@@ -71,7 +71,7 @@ if (_curObject isKindOf "House_F" && {player distance _curObject < 12} || ((near
 };
 
 if (dialog) exitWith {}; //Don't bother when a dialog is open.
-if !(isNull objectParent player) exitWith {}; //He's in a vehicle, cancel!
+if (vehicle player != player) exitWith {}; //He's in a vehicle, cancel!
 life_action_inUse = true;
 
 //Temp fail safe.
@@ -81,9 +81,9 @@ life_action_inUse = true;
 };
 
 //Check if it's a dead body.
-if (_curObject isKindOf "CAManBase" && {!alive _curObject}) exitWith {
+if (_curObject isKindOf "Man" && !(_curObject isKindOf "Animal") && {!alive _curObject} && !(_curObject getVariable ["Revive",false]) && {playerSide in [west,independent]}) exitWith {
     //Hotfix code by ins0
-    if ((playerSide isEqualTo west && {(LIFE_SETTINGS(getNumber,"revive_cops") isEqualTo 1)}) || {(playerSide isEqualTo civilian && {(LIFE_SETTINGS(getNumber,"revive_civ") isEqualTo 1)})} || {(playerSide isEqualTo east && {(LIFE_SETTINGS(getNumber,"revive_east") isEqualTo 1)})} || {playerSide isEqualTo independent}) then {
+    if (((playerSide isEqualTo west && {(LIFE_SETTINGS(getNumber,"revive_cops") isEqualTo 1)}) || playerSide isEqualTo independent)) then {
         if (life_inv_defibrillator > 0) then {
             [_curObject] call life_fnc_revivePlayer;
         };
@@ -91,7 +91,7 @@ if (_curObject isKindOf "CAManBase" && {!alive _curObject}) exitWith {
 };
 
 //If target is a player then check if we can use the cop menu.
-if (isPlayer _curObject && _curObject isKindOf "CAManBase") then {
+if (isPlayer _curObject && _curObject isKindOf "Man") then {
     if ((_curObject getVariable ["restrained",false]) && !dialog && playerSide isEqualTo west) then {
         [_curObject] call life_fnc_copInteractionMenu;
     };

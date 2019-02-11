@@ -12,7 +12,7 @@ life_interrupted = false;
 if (life_inv_fuelEmpty isEqualTo 0) exitWith {};
 if (count(nearestObjects [player,["Land_FuelStation_Feed_F","Land_fs_feed_F"],3.5]) isEqualTo 0) exitWith { hint localize "STR_ISTR_Jerry_Distance";};
 if (life_action_inUse) exitWith {};
-if !(isNull objectParent player) exitWith {};
+if ((vehicle player) != player) exitWith {};
 if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
 if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
 _fuelCost = LIFE_SETTINGS(getNumber,"fuelCan_refuel");
@@ -45,7 +45,7 @@ if (_action) then {
             player switchMove "AinvPknlMstpSnonWnonDnon_medic_1";
             player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
         };
-        uiSleep 0.2;
+        sleep 0.2;
         if (isNull _ui) then {
             "progressBar" cutRsc ["life_progress","PLAIN"];
             _ui = uiNamespace getVariable "life_progress";

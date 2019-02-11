@@ -28,7 +28,7 @@ if (_car isKindOf "I_Truck_02_covered_F" || _car isKindOf "I_Truck_02_transport_
 _fueltoput= ((SliderPosition 20901)-(floor(_fuelnow * _fueltank)));
 _setfuell = _fuelnow + (_fueltoput/_fueltank);
 _timer = ((_fueltoput * .25)/100);
-if (_car distance player > 10 && !(isNull objectParent player)) exitWith {
+if (_car distance player > 10 && vehicle player != player) exitWith {
     hint localize "STR_Distance_Vehicle_Pump";
     vehiclefuelList = [];
     life_action_inUse = false;
@@ -49,13 +49,13 @@ if ((BANK - (_fueltoput * life_fuelPrices))> 0)then {
     _tp =0;
     _totalcost = _fueltoput * life_fuelPrices;
     for "_i" from 0 to 1 step 0 do {
-        uiSleep  _timer;
+        sleep  _timer;
         _cP = _cP + 0.01;
         _progress progressSetPosition _cP;
         _pgText ctrlSetText format ["%3 (%1%2)...",round(_cP * 100),"%","Refuel:"];
         if (_cP >= 1) exitWith {};
         if (player distance _car > 10) exitWith {};
-        if !(isNull objectParent player) exitWith {};
+        if (vehicle player != player) exitWith {};
         if !((BANK - round(0.01 * _totalcost))> 0) exitWith {};
         BANK = BANK - round((0.01 * _totalcost));
         _tp = _tp +1;
@@ -65,7 +65,7 @@ if ((BANK - (_fueltoput * life_fuelPrices))> 0)then {
         };
     };
     "progressBar" cutText ["","PLAIN"];
-    if (_car distance player > 10 || !(isNull objectParent player)) then {
+    if (_car distance player > 10 || vehicle player != player) then {
         hint localize "STR_Distance_Vehicle_Pump";
         vehiclefuelList = [];
         life_is_processing = false;

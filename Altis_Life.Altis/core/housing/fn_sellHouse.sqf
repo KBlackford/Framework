@@ -8,9 +8,6 @@
     Sells the house and delete all container near house.
 */
 private ["_house","_uid","_action","_houseCfg"];
-
-if (dialog) then {closeDialog 0};
-
 _house = param [0,objNull,[objNull]];
 _uid = getPlayerUID player;
 
@@ -54,12 +51,12 @@ if (_action) then {
         publicVariableServer "advanced_log";
     };
 
-    if !(_index isEqualTo -1) then {
+    if (_index != -1) then {
         life_vehicles deleteAt _index;
     };
 
     _index = [str(getPosATL _house),life_houses] call TON_fnc_index;
-    if !(_index isEqualTo -1) then {
+    if (_index != -1) then {
         life_houses deleteAt _index;
     };
     _numOfDoors = FETCH_CONFIG2(getNumber,"CfgVehicles",(typeOf _house), "numberOfDoors");

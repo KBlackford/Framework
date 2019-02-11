@@ -8,7 +8,7 @@
 */
 private ["_maxGather","_resource","_amount","_maxGather","_requiredItem"];
 if (life_action_inUse) exitWith {};
-if !(isNull objectParent player) exitWith {};
+if ((vehicle player) != player) exitWith {};
 if (player getVariable "restrained") exitWith {hint localize "STR_NOTF_isrestrained";};
 if (player getVariable "playerSurrender") exitWith {hint localize "STR_NOTF_surrender";};
 
@@ -57,8 +57,8 @@ if (_diff isEqualTo 0) exitWith {
 };
 
 switch (_requiredItem) do {
-    case "pickaxe": {[player,"mining",35,1] remoteExecCall ["life_fnc_say3D",RCLIENT]};
-    default {[player,"harvest",35,1] remoteExecCall ["life_fnc_say3D",RCLIENT]};
+    case "pickaxe": {player say3D "mining";};
+    default {player say3D "harvest";};
 };
 
 for "_i" from 0 to 4 do {

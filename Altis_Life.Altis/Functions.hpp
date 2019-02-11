@@ -11,16 +11,6 @@ class Socket_Reciever {
     };
 };
 
-class SpyGlass {
-    tag = "SPY";
-    class Functions {
-        file = "SpyGlass";
-        class cookieJar{};
-        class notifyAdmins{};
-        class observe{};
-    };
-};
-
 class Life_Client_Core {
     tag = "life";
 
@@ -177,7 +167,6 @@ class Life_Client_Core {
         class actionKeyHandler {};
         class animSync {};
         class calWeightDiff {};
-        class checkMap {};
         class clearVehicleAmmo {};
         class dropItems {};
         class escInterupt {};
@@ -213,8 +202,10 @@ class Life_Client_Core {
         class receiveMoney {};
         class revealObjects {};
         class saveGear {};
+        class searchPosEmpty {};
         class simDisable {};
         class stripDownPlayer {};
+        class tazeSound {};
         class teleport {};
         class whereAmI {};
     };
@@ -324,9 +315,6 @@ class Life_Client_Core {
 
     class Shops {
         file = "core\shops";
-        class 3dPreviewDisplay {};
-        class 3dPreviewExit {};
-        class 3dPreviewInit {};
         class atmMenu {};
         class buyClothes {};
         class changeClothes {};
@@ -338,7 +326,10 @@ class Life_Client_Core {
         class fuelLBchange {};
         class fuelStatOpen {};
         class levelCheck {};
+        class vehicleShop3DPreview {};
         class vehicleShopBuy {};
+        class vehicleShopEnd3DPreview {};
+        class vehicleShopInit3DPreview {};
         class vehicleShopLBChange {};
         class vehicleShopMenu {};
         class virt_buy {};

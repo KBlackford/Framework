@@ -1,10 +1,10 @@
-disableChannels[] = {{0,true,true},{1,true,true},{2,true,true}};    // Disabled text and voice for global, side, and command channels. Syntax: disableChannels[] = {{channelID<number>, disableChat<bool>, disableVoice<bool>}};
-overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the overviewPicture on the mission selection screen when the mission is available to play.
+disableChannels[]={{0,true,true},{1,true,true},{2,true,true}};    // Disabled text and voice for global, side, and command channels. disableChannels[] = {{channelID<number>, disableChat<bool>, disableVoice<bool>}};
 
 #include "config\Config_SpyGlass.hpp"
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
+#include "infiSTAR_AdminMenu.hpp"
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
@@ -42,7 +42,7 @@ class CfgSounds {
 
     class tazerSound {
         name = "tazerSound";
-        sound[] = {"\sounds\tazer.ogg", 0.5, 1};
+        sound[] = {"\sounds\tazer.ogg", 0.25, 1};
         titles[] = {};
     };
 
@@ -66,13 +66,13 @@ class CfgSounds {
 
     class lockCarSound {
         name = "lockCarSound";
-        sound[] = {"\sounds\carLock.ogg", 1.0, 1};
+        sound[] = {"\sounds\carLock.ogg", 0.25, 1};
         titles[] = {};
     };
 
     class unlockCarSound {
         name = "unlockCarSound";
-        sound[] = {"\sounds\carUnlock.ogg", 0.75, 1};
+        sound[] = {"\sounds\carUnlock.ogg", 0.25, 1};
         titles[] = {};
     };
 };
@@ -97,9 +97,9 @@ class CfgDebriefing {
     };
 
     class SpyGlass {
-        title = "$STR_SpyDetect_Title";
-        subTitle = "$STR_SpyDetect_SubTitle";
-        description = "$STR_SpyDetect_Descript";
+        title = $STR_SpyDetect_Title;
+        subTitle = $STR_SpyDetect_SubTitle;
+        description = $STR_SpyDetect_Descript;
         pictureBackground = "";
         picture = "";
         pictureColor[] = {0,0.3,0.6,1};

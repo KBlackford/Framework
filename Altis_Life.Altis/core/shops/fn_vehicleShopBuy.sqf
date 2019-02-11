@@ -10,8 +10,6 @@
 params [["_mode",true,[true]]];
 
 if ((lbCurSel 2302) isEqualTo -1) exitWith {hint localize "STR_Shop_Veh_DidntPick";closeDialog 0;};
-if ((time - life_action_delay) < 0.2) exitWith {hint localize "STR_NOTF_ActionDelay";};
-life_action_delay = time;
 
 private _className = lbData[2302,(lbCurSel 2302)];
 private _vIndex = lbValue[2302,(lbCurSel 2302)];
@@ -53,7 +51,7 @@ if (_mode) then {
 
 private _conditions = M_CONFIG(getText,"LifeCfgVehicles",_className,"conditions");
 
-if !([_conditions] call life_fnc_levelCheck) exitWith {hint localize "STR_Shop_Veh_NoLicense";};
+if !([_conditions] call life_fnc_levelCheck) exitWith {hint localize "STR_Shop_Veh_NoLicence";};
 
 private _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
@@ -108,9 +106,8 @@ _vehicle lock 2;
 
 [_vehicle,_colorIndex] call life_fnc_colorVehicle;
 [_vehicle] call life_fnc_clearVehicleAmmo;
-
-_vehicle setVariable ["trunk_in_use",false,true];
-_vehicle setVariable ["vehicle_info_owners",[[getPlayerUID player,profileName]],true];
+[_vehicle,"trunk_in_use",false,true] remoteExecCall ["TON_fnc_setObjVar",RSERV];
+[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true] remoteExecCall ["TON_fnc_setObjVar",RSERV];
 
 _vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 

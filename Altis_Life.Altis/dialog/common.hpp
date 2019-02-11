@@ -120,7 +120,7 @@ class Life_RscHud
     style = 0x00;
     colorBackground[] = { 1 , 1 , 1 , 0 };
     colorText[] = { 1 , 1 , 1 , 1 };
-    font = "RobotoCondensedBold";
+    font = "PuristaSemibold";
     sizeEx = 0.025;
     h = 0.25;
     text = "";
@@ -131,7 +131,7 @@ class Life_RscListNBox
     style = 16;
     type = 102;
     shadow = 0;
-    font = "RobotoCondensed";
+    font = "PuristaMedium";
     sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
     color[] = {0.95,0.95,0.95,1};
     colorText[] = {1,1,1,1.0};
@@ -166,7 +166,7 @@ class Life_RscText {
     style = 0;
     shadow = 1;
     colorShadow[] = {0, 0, 0, 0.5};
-    font = "RobotoCondensed";
+    font = "PuristaMedium";
     SizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
     text = "";
     colorText[] = {1, 1, 1, 1.0};
@@ -191,7 +191,7 @@ class Life_RscLine: Life_RscText {
 
 class Life_RscTree {
     style = 2;
-    font = "RobotoCondensed";
+    font = "PuristaMedium";
     sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
     expandedTexture = "A3\ui_f\data\gui\Rsccommon\Rsctree\expandedTexture_ca.paa";
     hiddenTexture = "A3\ui_f\data\gui\Rsccommon\Rsctree\hiddenTexture_ca.paa";
@@ -215,7 +215,7 @@ class life_RscPicture {
     type = 0;
     style = 48;
     sizeEx = 0.023;
-    font = "RobotoCondensed";
+    font = "PuristaMedium";
     colorBackground[] = {};
     colorText[] = {};
     x = 0;
@@ -251,7 +251,7 @@ class Life_RscStructuredText {
     shadow = 1;
 
     class Attributes {
-        font = "RobotoCondensed";
+        font = "PuristaMedium";
         color = "#ffffff";
         align = "left";
         shadow = 1;
@@ -267,7 +267,7 @@ idc = -1;
     h = 0.037;
     w = 0.3;
     sizeEx = 0.040;
-    font = "RobotoCondensedLight";
+    font = "PuristaLight";
     color[] = {1, 1, 1, 1};
     colorActive[] = {1, 0.2, 0.2, 1};
     soundEnter[] = {"\A3\ui_f\data\sound\onover", 0.09, 1};
@@ -289,7 +289,7 @@ class Life_RscButton
     w = 0.095589;
     h = 0.039216;
     shadow = 2;
-    font = "RobotoCondensed";
+    font = "PuristaMedium";
     sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
     colorText[] = {1,1,1,1.0};
     colorDisabled[] = {0.4,0.4,0.4,1};
@@ -364,7 +364,7 @@ class Life_RscShortcutButton {
         bottom = 0.0;
     };
     period = 0.4;
-    font = "RobotoCondensed";
+    font = "PuristaMedium";
     size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
     sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
     text = "";
@@ -375,14 +375,14 @@ class Life_RscShortcutButton {
     action = "";
     class Attributes
     {
-        font = "RobotoCondensed";
+        font = "PuristaMedium";
         color = "#E5E5E5";
         align = "left";
         shadow = "true";
     };
     class AttributesImage
     {
-        font = "RobotoCondensed";
+        font = "PuristaMedium";
         color = "#E5E5E5";
         align = "left";
     };
@@ -429,7 +429,7 @@ class Life_RscButtonMenu : Life_RscShortcutButton {
     };
     class Attributes
     {
-        font = "RobotoCondensedLight";
+        font = "PuristaLight";
         color = "#E5E5E5";
         align = "left";
         shadow = "false";
@@ -484,7 +484,7 @@ class Life_RscShortcutButtonMain : Life_RscShortcutButton {
     animTexturePressed = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\down_ca.paa";
     animTextureDefault = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\normal_ca.paa";
     period = 0.5;
-    font = "RobotoCondensed";
+    font = "PuristaMedium";
     size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)";
     sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)";
     text = "";
@@ -495,14 +495,14 @@ class Life_RscShortcutButtonMain : Life_RscShortcutButton {
     action = "";
 
     class Attributes {
-        font = "RobotoCondensed";
+        font = "PuristaMedium";
         color = "#E5E5E5";
         align = "left";
         shadow = "false";
     };
 
     class AttributesImage {
-        font = "RobotoCondensed";
+        font = "PuristaMedium";
         color = "#E5E5E5";
         align = "false";
     };
@@ -524,7 +524,7 @@ class Life_RscCheckbox {
     colorSelect[] = {0, 0, 0, 1};
     colorTextDisable[] = {0.4, 0.4, 0.4, 1};
     colorDisable[] = {0.4, 0.4, 0.4, 1};
-    font = "RobotoCondensed";
+    font = "PuristaMedium";
     sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
     rows = 1;
     5ns = 1;
@@ -554,7 +554,7 @@ class Life_RscListBox
     type = 5;
     w = 0.275;
     h = 0.04;
-    font = "RobotoCondensed";
+    font = "PuristaMedium";
     colorSelect[] = {1, 1, 1, 1};
     colorText[] = {1, 1, 1, 1};
     colorBackground[] = {0.28,0.28,0.28,0.28};
@@ -593,7 +593,7 @@ class Life_RscListBox
 class Life_RscEdit {
     type = 2;
     style = 0x00 + 0x40;
-    font = "RobotoCondensed";
+    font = "PuristaMedium";
     shadow = 2;
     sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
     colorBackground[] = {0, 0, 0, 1};
@@ -643,7 +643,7 @@ class Life_RscFrame {
     shadow = 2;
     colorBackground[] = {0, 0, 0, 0};
     colorText[] = {1, 1, 1, 1};
-    font = "RobotoCondensed";
+    font = "PuristaMedium";
     sizeEx = 0.02;
     text = "";
 };
@@ -660,7 +660,7 @@ class Life_RscBackground: Life_RscText {
     text = "";
     ColorBackground[] = {0.48, 0.5, 0.35, 1};
     ColorText[] = {0.1, 0.1, 0.1, 1};
-    font = "RobotoCondensed";
+    font = "PuristaMedium";
     SizeEx = 1;
 };
 
@@ -675,50 +675,50 @@ class Life_RscHTML {
     shadow = 2;
 
     class H1 {
-        font = "RobotoCondensed";
-        fontBold = "RobotoCondensedBold";
+        font = "PuristaMedium";
+        fontBold = "PuristaSemibold";
         sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)";
         align = "left";
     };
 
     class H2 {
-        font = "RobotoCondensed";
-        fontBold = "RobotoCondensedBold";
+        font = "PuristaMedium";
+        fontBold = "PuristaSemibold";
         sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
         align = "right";
     };
 
     class H3 {
-        font = "RobotoCondensed";
-        fontBold = "RobotoCondensedBold";
+        font = "PuristaMedium";
+        fontBold = "PuristaSemibold";
         sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
         align = "left";
     };
 
     class H4 {
-        font = "RobotoCondensed";
-        fontBold = "RobotoCondensedBold";
+        font = "PuristaMedium";
+        fontBold = "PuristaSemibold";
         sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
         align = "left";
     };
 
     class H5 {
-        font = "RobotoCondensed";
-        fontBold = "RobotoCondensedBold";
+        font = "PuristaMedium";
+        fontBold = "PuristaSemibold";
         sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
         align = "left";
     };
 
     class H6 {
-        font = "RobotoCondensed";
-        fontBold = "RobotoCondensedBold";
+        font = "PuristaMedium";
+        fontBold = "PuristaSemibold";
         sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
         align = "left";
     };
 
     class P {
-        font = "RobotoCondensed";
-        fontBold = "RobotoCondensedBold";
+        font = "PuristaMedium";
+        fontBold = "PuristaSemibold";
         sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
         align = "left";
     };
@@ -778,7 +778,7 @@ class Life_RscMapControl
         y = "SafeZoneY + safezoneH - 4.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
         w = "10 * (((safezoneW / safezoneH) min 1.2) / 40)";
         h = "3.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-        font = "RobotoCondensed";
+        font = "PuristaMedium";
         sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
     };
     class ActiveMarker
@@ -1050,15 +1050,15 @@ class Life_RscMapControl
     maxSatelliteAlpha = 0.85;
     alphaFadeStartScale = 0.35;
     alphaFadeEndScale = 0.4;
-    fontLabel = "RobotoCondensed";
+    fontLabel = "PuristaMedium";
     sizeExLabel = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
     fontGrid = "TahomaB";
     sizeExGrid = 0.02;
     fontUnits = "TahomaB";
     sizeExUnits = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-    fontNames = "RobotoCondensed";
+    fontNames = "PuristaMedium";
     sizeExNames = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8) * 2";
-    fontInfo = "RobotoCondensed";
+    fontInfo = "PuristaMedium";
     sizeExInfo = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
     fontLevel = "TahomaB";
     sizeExLevel = 0.02;
@@ -1134,7 +1134,7 @@ class Life_RscCombo {
     maxHistoryDelay = 1;
     colorBackground[] = {0.4,0.4,0.4,0.4};
     colorSelectBackground[] = {1, 1, 1, 0.7};
-    colorScrollbar[] = {1, 0, 0, 1};
+    colow_Rscrollbar[] = {1, 0, 0, 1};
     soundSelect[] = {
             "", 0.000000, 1
     };
@@ -1144,7 +1144,7 @@ class Life_RscCombo {
     color[] = {1, 1, 1, 1};
     colorActive[] = {1, 0, 0, 1};
     colorDisabled[] = {1, 1, 1, 0.25};
-    font = "RobotoCondensed";
+    font = "PuristaMedium";
     sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 
     class ComboScrollBar : Life_RscScrollBar {};
@@ -1158,6 +1158,6 @@ class Life_RscToolbox {
     colorTextDisable[] = {0.4, 0.4, 0.4, 1};
     colorDisable[] = {0.4, 0.4, 0.4, 1};
     colorSelectedBg[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-    font = "RobotoCondensed";
+    font = "PuristaMedium";
     sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 };

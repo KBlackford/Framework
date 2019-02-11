@@ -22,10 +22,6 @@ disableSerialization;
 if (dialog) exitWith {};
 if (_shop isEqualTo "") exitWith {};
 if (!(_sideCheck isEqualTo sideUnknown) && {!(playerSide isEqualTo _sideCheck)}) exitWith {hint localize "STR_Shop_Veh_NotAllowed"};
-
-private _conditions = M_CONFIG(getText,"CarShops",_shop,"conditions");
-if !([_conditions] call life_fnc_levelCheck) exitWith {hint localize "STR_Shop_Veh_NotAllowed"};
-
 if (LIFE_SETTINGS(getNumber,"vehicleShop_3D") isEqualTo 1) then {
   createDialog "Life_Vehicle_Shop_v2_3D";
 } else {
@@ -63,5 +59,9 @@ ctrlShow [2304,false];
         _control lbSetValue [(lbSize _control)-1,_forEachIndex];
     };
 } forEach _vehicleList;
+
+if (LIFE_SETTINGS(getNumber,"vehicleShop_3D") isEqualTo 1) then {
+  [] call life_fnc_vehicleShopInit3DPreview;
+};
 
 ((findDisplay 2300) displayCtrl 2302) lbSetCurSel 0;

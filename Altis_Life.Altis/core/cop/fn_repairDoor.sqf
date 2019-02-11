@@ -51,7 +51,7 @@ for "_i" from 0 to 1 step 0 do {
         player switchMove "AinvPknlMstpSnonWnonDnon_medic_1";
         player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
     };
-    uiSleep 0.26;
+    sleep 0.26;
     if (isNull _ui) then {
         "progressBar" cutRsc ["life_progress","PLAIN"];
         _ui = uiNamespace getVariable "life_progress";
@@ -70,7 +70,7 @@ if (!alive player) exitWith {life_action_inUse = false;};
 if (life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 life_action_inUse = false;
 
-_building animateSource [format ["Door_%1_source", _door], 0];
+_building animate [format ["door_%1_rot",_door],0];
 _building setVariable [format ["bis_disabled_Door_%1",_door],1,true]; //Lock the door.
 
 _locked = true;

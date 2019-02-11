@@ -7,7 +7,7 @@
     Stores the vehicle in the garage.
 */
 private ["_nearVehicles","_vehicle"];
-if !(isNull objectParent player) then {
+if (vehicle player != player) then {
     _vehicle = vehicle player;
 } else {
     _nearVehicles = nearestObjects[getPos (_this select 0),["Car","Air","Ship"],30]; //Fetch vehicles within 30m.

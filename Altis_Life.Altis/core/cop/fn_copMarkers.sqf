@@ -15,7 +15,7 @@ if (visibleMap) then {
 
     //Create markers
     {
-        if !(_x isEqualTo player) then {
+        if (_x != player) then {
             _marker = createMarkerLocal [format ["%1_marker",_x],visiblePosition _x];
             _marker setMarkerColorLocal "ColorBLUFOR";
             _marker setMarkerTypeLocal "Mil_dot";

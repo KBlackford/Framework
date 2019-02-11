@@ -9,7 +9,7 @@
     */
 private ["_maxGather", "_resource", "_amount", "_requiredItem", "_mined"];
 if (life_action_inUse) exitWith {};
-if !(isNull objectParent player) exitWith {};
+if ((vehicle player) != player) exitWith {};
 if (player getVariable "restrained") exitWith {
     hint localize "STR_NOTF_isrestrained";
 };
@@ -87,8 +87,7 @@ if (_diff isEqualTo 0) exitWith {
     hint localize "STR_NOTF_InvFull";
     life_action_inUse = false;
 };
-
-[player,"mining",35,1] remoteExecCall ["life_fnc_say3D",RCLIENT];
+player say3D "mining";
 
 for "_i" from 0 to 4 do {
     player playMoveNow "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
