@@ -117,7 +117,7 @@ class VirtualShops {
         name = "STR_Shops_Gold";
         side = "civ";
         conditions = "";
-        items[] = { "goldbar" };
+        items[] = { "goldbar", "goldbullion" };
     };
 
     class cop {

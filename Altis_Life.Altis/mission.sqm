@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1179;
+		nextID=1181;
 	};
 	class MarkerIDProvider
 	{
-		nextID=224;
+		nextID=225;
 	};
 	class Camera
 	{
-		pos[]={8394.8105,43.062988,7321.3022};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		pos[]={9185.8203,121.66797,8390.2158};
+		dir[]={0.72295654,-0.29755884,0.62357259};
+		up[]={0.22533415,0.95468998,0.19435993};
+		aside[]={0.65315896,2.1896994e-007,-0.75725204};
 	};
 };
 binarizationWanted=0;
@@ -194,6 +194,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -208,24 +226,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -36950,13 +36950,13 @@ class Mission
 		class Item872
 		{
 			dataType="Marker";
-			position[]={8380.5264,18.101999,7335.0088};
-			name="mine_gold_nugget";
+			position[]={9178.8115,90.634003,8396.0635};
+			name="gold_mine";
 			text="@STR_MAR_goldN";
 			type="mil_triangle";
 			colorName="ColorYellow";
-			id=1178;
-			atlOffset=-0.00011825562;
+			id=1180;
+			atlOffset=0.0001373291;
 		};
 	};
 };

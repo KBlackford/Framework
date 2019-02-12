@@ -112,9 +112,10 @@ Example 2:
 		
 		class gold_ore {
             amount = 3;
-            zones[] = { "mine_gold_nugget" };
+            zones[] = { "gold_mine" };
             item = "pickaxe";
             mined[] = { {"goldnuggets",0,5} , { "foolsgold" ,5,95 } };
+			zoneSize = 30;
         };
 
         class rock {
