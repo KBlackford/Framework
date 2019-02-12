@@ -935,6 +935,9 @@
             <Portuguese>Depositar</Portuguese>
             <Polish>Deopozyt</Polish>
         </Key>
+		<Key ID="STR_ATM_Deposit_All">
+            <Original>Deposit All</Original>
+        </Key>
         <Key ID="STR_ATM_WithdrawGang">
             <Original>Withdraw: Gang</Original>
             <Czech>Odstoupit: Gang</Czech>
