@@ -286,6 +286,39 @@ class VirtualItems {
         edible = -1;
         icon = "icons\ico_storageBig.paa";
     };
+	//Legal -Custom
+	class goldbullion {
+        variable = "goldBullion";
+        displayName = "STR_Item_goldB";
+        weight = 2;
+        buyPrice = -1;
+        sellPrice = 30000;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_goldbullion.paa";
+    };
+	
+	class goldnuggets {
+        variable = "goldNuggets";
+        displayName = "STR_Item_goldN";
+        weight = 2;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_goldnugget.paa";
+    };
+	
+	class foolsgold {
+        variable = "foolsGold";
+        displayName = "STR_Item_foolsgold";
+        weight = 6;
+        buyPrice = -1;
+        sellPrice = -1;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_pyrite.paa";
+    };
 
     //Mined Items
     class oil_unprocessed {

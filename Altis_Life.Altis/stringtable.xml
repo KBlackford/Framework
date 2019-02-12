@@ -6813,6 +6813,15 @@
             <Portuguese>Tapete de Espinhos</Portuguese>
             <Polish>Kolczatka drogowa</Polish>
         </Key>
+		<Key ID="STR_Item_goldB">
+            <Original>Gold Bullion</Original>
+        </Key>
+		<Key ID="STR_Item_goldN">
+            <Original>Gold Nugget</Original>
+        </Key>
+		<Key ID="STR_Item_foolsgold">
+            <Original>Fools Gold</Original>
+        </Key>
     </Package>
     <Package name="Life_License">
         <Key ID="STR_License_Driver">
@@ -7045,6 +7054,9 @@
             <Italian>Licenza possesso Casa</Italian>
             <Portuguese>Licença de Casas</Portuguese>
             <Polish>Zarządca nieruchomości</Polish>
+        </Key>
+        <Key ID="STR_License_goldB">
+            <Original>Gold Bullion Processing</Original>
         </Key>
     </Package>
     <Package name="More_Item_Strings">
@@ -7720,6 +7732,9 @@
             <Italian>Hai processato %1 in %2 al costo di $%3</Italian>
             <Portuguese>Você trasformou %1 em %2 por R$%3</Portuguese>
             <Polish>Przetworzyłeś %1 na % za $%3</Polish>
+        </Key>
+		<Key ID="STR_Process_goldN">
+            <Original>Processing Gold Nuggets</Original> 
         </Key>
     </Package>
     <Package name="Medical_Strings">
@@ -10415,6 +10430,9 @@
             <Portuguese>Pagar Fiança</Portuguese>
             <Polish>Zapłać kaucję</Polish>
             <Italian>Paga cauzione</Italian>
+        </Key>
+		<Key ID="STR_MAR_goldN">
+            <Original>Gold Mine</Original>
         </Key>
     </Package>
     <Package name="Crimes">

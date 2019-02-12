@@ -128,6 +128,14 @@ class Licenses {
         illegal = false;
         side = "civ";
     };
+    
+	class goldB {
+        variable = "goldB";
+        displayName = "STR_License_goldB";
+        price = 100000;
+        illegal = true;
+        side = "civ";
+    };
 
     //Illegal Licenses
     class cocaine {

@@ -96,4 +96,11 @@ class ProcessAction {
         //ScrollText = "Mix Cement";
         NoLicenseCost = 350;
     };
+	class goldbullion {
+        MaterialsReq[] = {{"goldnuggets",5}};
+        MaterialsGive[] = {{"goldbullion",1}};
+        Text = "STR_Process_goldN";
+        //ScrollText = "Process Gold Nuggets";
+        NoLicenseCost = 100;
+	};
 };
