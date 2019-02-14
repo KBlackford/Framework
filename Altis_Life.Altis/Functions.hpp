@@ -362,6 +362,8 @@ class Life_Client_Core {
         class vehInventory {};
         class vehStoreItem {};
         class vehTakeItem {};
+		class vehTakeAllItem {};
+		class vehStoreAllItem {};
         class vInteractionMenu {};
     };
 };

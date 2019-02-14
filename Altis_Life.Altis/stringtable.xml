@@ -2721,6 +2721,28 @@
             <Italian>Deposita</Italian>
             <Portuguese>Depositar</Portuguese>
             <Polish>Schowaj</Polish>
+        </Key> 
+        <Key ID="STR_Trunk_TakeAll">
+            <Original>Take All</Original>
+            <Czech>Vzít</Czech>
+            <Spanish>Sacar</Spanish>
+            <Russian></Russian>
+            <German>Nehmen</German>
+            <French>Récupérer</French>
+            <Italian>Prendi</Italian>
+            <Portuguese>Pegar</Portuguese>
+            <Polish>Weź</Polish>
+        </Key>
+        <Key ID="STR_Trunk_StoreAll">
+            <Original>Store All</Original>
+            <Czech>Obchod</Czech>
+            <Spanish>Guardar</Spanish>
+            <Russian></Russian>
+            <German>Lagern</German>
+            <French>Déposer</French>
+            <Italian>Deposita</Italian>
+            <Portuguese>Depositar</Portuguese>
+            <Polish>Schowaj</Polish>
         </Key>
     </Package>
     <Package name="Wanted_Menu">
