@@ -22,6 +22,14 @@ class VirtualShops {
         items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator" };
     };
 
+    class bmmarket {
+        name = "Black Market";
+        side = "civ";
+        license = "bmcm";
+        level[] = { "", "", -1, "" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "zipties", "blindfold", "bandages" };
+    };
+
     class rebel {
         name = "STR_Shops_Rebel";
         side = "civ";
