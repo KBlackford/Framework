@@ -57,10 +57,27 @@ for "_i" from 0 to count(_resourceCfg)-1 do {
     _resourceZones = getArray(_curConfig >> "zones");
     _zoneSize = getNumber(_curConfig >> "zoneSize");
 
-    if (!(_resources select 0 isEqualType [])) then {
-        _mined = _resources select 0;
-    } else {
-        _mined = (_resources select 0) select 0;
+    //if (!(_resources select 0 isEqualType [])) then {
+    //    _mined = _resources select 0;
+    //} else {
+    //    _mined = (_resources select 0) select 0;
+    //};
+	
+	if (_resources isEqualTo []) exitWith {}; //Smart guy :O
+    for "_i" from 0 to count (_resources) do {
+        if (count _resources isEqualTo 1) exitWith {
+            if (!((_resources select 0) isEqualType [])) then {
+                _mined = _resources select 0;
+            } else {
+                _mined = (_resources select 0) select 0;
+            };
+        };
+        _resource = (_resources select _i) select 0;
+        _prob = (_resources select _i) select 1;
+        _probdiff = (_resources select _i) select 2;
+        if ((_percent >= _prob) && (_percent <= _probdiff)) exitWith {
+            _mined = _resource;
+        };
     };
 
     {
