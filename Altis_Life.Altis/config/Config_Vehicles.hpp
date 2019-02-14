@@ -137,6 +137,7 @@ class CarShops {
         vehicles[] = {
             { "C_Plane_Civil_01_F", { "", "", -1 } },
 			{ "B_T_VTOL_01_vehicle_blue_F", { "", "", -1 } },
+			{ "B_T_VTOL_01_infantry_blue_F", { "", "", -1 } },
             { "C_Plane_Civil_01_racing_F", { "", "", -1 } }
         };
     };
@@ -672,6 +673,20 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 300;
         conditions = "license_civ_trucking";
         price = 250000;
+        textures[] = {};
+    };
+	
+	class B_T_VTOL_01_vehicle_blue_F {
+        vItemSpace = 5000;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 30000000;
+        textures[] = {};
+    };
+	
+	class B_T_VTOL_01_infantry_blue_F {
+        vItemSpace = 5000;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 25000000;
         textures[] = {};
     };
 
