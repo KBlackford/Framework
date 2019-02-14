@@ -111,7 +111,7 @@ class TrunkMenu {
             onButtonClick = "[] call life_fnc_vehStoreItem;";
             x = 0.67;
             y = 0.78;
-            w = (4.5 / 40);
+            w = (5 / 40);
             h = (1 / 25);
         };
 
