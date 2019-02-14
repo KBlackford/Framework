@@ -136,14 +136,14 @@ class Life_Settings {
 
     /* Vehicle Purchase Prices */
     vehicle_purchase_multiplier_CIVILIAN = 1; //Civilian Vehicle Buy Price = Config_Vehicle price * multiplier
-    vehicle_purchase_multiplier_COP = .5; //Cop Vehicle Buy Price = Config_Vehicle price * multiplier
-    vehicle_purchase_multiplier_MEDIC = .75; //Medic Vehicle Buy Price = Config_Vehicle price * multiplier
+    vehicle_purchase_multiplier_COP = 1; //Cop Vehicle Buy Price = Config_Vehicle price * multiplier
+    vehicle_purchase_multiplier_MEDIC = 1; //Medic Vehicle Buy Price = Config_Vehicle price * multiplier
     vehicle_purchase_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
 
     /* Vehicle Rental Prices */
     vehicle_rental_multiplier_CIVILIAN = .80; //Civilian Vehicle Rental Price = Config_Vehicle price * multiplier
-    vehicle_rental_multiplier_COP = .3; //Cop Vehicle Rental Price = Config_Vehicle price * multiplier
-    vehicle_rental_multiplier_MEDIC = .55; //Medic Vehicle Rental Price = Config_Vehicle price * multiplier
+    vehicle_rental_multiplier_COP = .75; //Cop Vehicle Rental Price = Config_Vehicle price * multiplier
+    vehicle_rental_multiplier_MEDIC = .60; //Medic Vehicle Rental Price = Config_Vehicle price * multiplier
     vehicle_rental_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
 
     /* Vehicle Sell Prices */
@@ -153,9 +153,9 @@ class Life_Settings {
     vehicle_sell_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
 
     /* "Other" Vehicle Prices */
-    vehicle_chopShop_multiplier = .25; //Chop Shop price for vehicles. TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
-    vehicle_storage_fee_multiplier = .2; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier
-    vehicle_cop_impound_multiplier = .1; //TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
+    vehicle_chopShop_multiplier = .75; //Chop Shop price for vehicles. TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
+    vehicle_storage_fee_multiplier = .025; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier
+    vehicle_cop_impound_multiplier = -1; //TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
 
     /* Wanted System Settings *
     /* crimes[] = {String, Bounty, Code} */
