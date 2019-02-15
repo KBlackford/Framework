@@ -311,93 +311,6 @@
             <Portuguese>Loja de Conveniência</Portuguese>
             <Polish>Caffe OLLEN</Polish>
         </Key>
-        <Key ID="STR_Shops_BM_clothing">
-            <Original>Black Market Clothing</Original>
-        </Key>
-        <Key ID="STR_Shops_BM_market">
-            <Original>The Black Market</Original>
-        </Key>
-        <Key ID="STR_Shops_BM_Weapons1">
-            <Original>Black Market Equipment 1</Original>
-        </Key>
-        <Key ID="STR_Shops_BM_Weapons2">
-            <Original>Black Market Equipment 2</Original>
-        </Key>
-        <Key ID="STR_Shops_BM_Weapons3">
-            <Original>Black Market Equipment 3</Original>
-        </Key>
-        <Key ID="STR_Shops_BM_Weapons4">
-            <Original>Black Market Equipment 4</Original>
-        </Key>
-        <Key ID="STR_Shops_BM_Weapons5">
-            <Original>Black Market Equipment 5</Original>
-        </Key>
-        <Key ID="STR_Shops_car1">
-            <Original>Black Market Imports 1</Original>
-        </Key>
-        <Key ID="STR_Shops_car2">
-            <Original>Black Market Imports 2</Original>
-        </Key>
-        <Key ID="STR_Shops_car3">
-            <Original>Black Market Imports 3</Original>
-        </Key>
-        <Key ID="STR_Shops_car4">
-            <Original>Black Market Imports 4</Original>
-        </Key>
-        <Key ID="STR_Shops_car5">
-            <Original>Black Market Imports 5</Original>
-        </Key>
-        <Key ID="STR_Shops_heli1">
-            <Original>Black Market Whirlybirds 1</Original>
-        </Key>
-        <Key ID="STR_Shops_heli2">
-            <Original>Black Market Whirlybirds 2</Original>
-        </Key>
-        <Key ID="STR_Shops_heli3">
-            <Original>Black Market Whirlybirds 3</Original>
-        </Key>
-        <Key ID="STR_Shops_heli4">
-            <Original>Black Market Whirlybirds 4</Original>
-        </Key>
-        <Key ID="STR_Shops_heli5">
-            <Original>Black Market Whirlybirds 5</Original>
-        </Key>
-        <Key ID="STR_Shops_jet1">
-            <Original>Black Market Aeroplanes 1</Original>
-        </Key>
-        <Key ID="STR_Shops_jet2">
-            <Original>Black Market Aeroplanes 2</Original>
-        </Key>
-        <Key ID="STR_Shops_jet3">
-            <Original>Black Market Aeroplanes 3</Original>
-        </Key>
-        <Key ID="STR_Shops_jet4">
-            <Original>Black Market Aeroplanes 4</Original>
-        </Key>
-        <Key ID="STR_Shops_jet5">
-            <Original>Black Market Aeroplanes 5</Original>
-        </Key>
-        <Key ID="STR_Shops_licenses">
-            <Original>Black Market Licenses</Original>
-        </Key>
-        <Key ID="STR_Blackmarket_Investor_1">
-            <Original>Black Market Investor 1</Original>
-        </Key>
-        <Key ID="STR_Blackmarket_Investor_2">
-            <Original>Black Market Investor 2</Original>
-        </Key>
-        <Key ID="STR_Blackmarket_Investor_3">
-            <Original>Black Market Investor 3</Original>
-        </Key>
-        <Key ID="STR_Blackmarket_Investor_4">
-            <Original>Black Market Investor 4</Original>
-        </Key>
-        <Key ID="STR_Blackmarket_Investor_5">
-            <Original>Black Market Investor 5</Original>
-        </Key>
-        <Key ID="STR_Blackmarket_BMCM">
-            <Original>Black Market Clothes and Market Pass</Original>
-        </Key>
     </Package>
     <Package name="Global">
         <Key ID="STR_Global_Close">
@@ -1021,9 +934,6 @@
             <Italian>Deposita</Italian>
             <Portuguese>Depositar</Portuguese>
             <Polish>Deopozyt</Polish>
-        </Key>
-		<Key ID="STR_ATM_Deposit_All">
-            <Original>Dept. All</Original>
         </Key>
         <Key ID="STR_ATM_WithdrawGang">
             <Original>Withdraw: Gang</Original>
@@ -2800,28 +2710,6 @@
         </Key>
         <Key ID="STR_Trunk_Store">
             <Original>Store</Original>
-            <Czech>Obchod</Czech>
-            <Spanish>Guardar</Spanish>
-            <Russian></Russian>
-            <German>Lagern</German>
-            <French>Déposer</French>
-            <Italian>Deposita</Italian>
-            <Portuguese>Depositar</Portuguese>
-            <Polish>Schowaj</Polish>
-        </Key> 
-        <Key ID="STR_Trunk_TakeAll">
-            <Original>Take All</Original>
-            <Czech>Vzít</Czech>
-            <Spanish>Sacar</Spanish>
-            <Russian></Russian>
-            <German>Nehmen</German>
-            <French>Récupérer</French>
-            <Italian>Prendi</Italian>
-            <Portuguese>Pegar</Portuguese>
-            <Polish>Weź</Polish>
-        </Key>
-        <Key ID="STR_Trunk_StoreAll">
-            <Original>Store All</Original>
             <Czech>Obchod</Czech>
             <Spanish>Guardar</Spanish>
             <Russian></Russian>

@@ -22,45 +22,6 @@ class CfgSpawnPoints {
 
     class Altis {
         class Civilian {
-		class BlackMarket1 {
-            displayName = "Black Market";
-            spawnMarker = "civ_spawn_bm_1";
-            icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
-            licenses[] = { { "bmi1", true } };
-            level[] = { "", "", -1 };
-        };
-		
-		class BlackMarket2 {
-            displayName = "Black Market";
-            spawnMarker = "civ_spawn_bm_2";
-            icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
-            licenses[] = { { "bmi2", true } };
-            level[] = { "", "", -1 };
-        };
-		
-		class BlackMarket3 {
-            displayName = "Black Market";
-            spawnMarker = "civ_spawn_bm_3";
-            icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
-            licenses[] = { { "bmi3", true } };
-            level[] = { "", "", -1 };
-        };
-		
-		class BlackMarket4 {
-            displayName = "Black Market";
-            spawnMarker = "civ_spawn_bm_4";
-            icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
-            licenses[] = { { "bmi4", true } };
-            level[] = { "", "", -1 };
-        };
-		
-		class BlackMarket5 {
-            displayName = "Black Market";
-            spawnMarker = "civ_spawn_bm_5";
-            icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
-            licenses[] = { { "bmi5", true } };
-            level[] = { "", "", -1 };
-        };
             class Kavala {
                 displayName = "Kavala";
                 spawnMarker = "civ_spawn_1";

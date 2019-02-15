@@ -208,7 +208,6 @@ class Life_Client_Core {
         class tazeSound {};
         class teleport {};
         class whereAmI {};
-		class seatbelt {};
     };
 
     class Gangs {
@@ -336,7 +335,6 @@ class Life_Client_Core {
         class virt_buy {};
         class virt_menu {};
         class virt_sell {};
-		class virt_sellAll {};
         class virt_update {};
         class weaponShopAccs {};
         class weaponShopBuySell {};
@@ -362,8 +360,6 @@ class Life_Client_Core {
         class vehInventory {};
         class vehStoreItem {};
         class vehTakeItem {};
-		class vehTakeAllItem {};
-		class vehStoreAllItem {};
         class vInteractionMenu {};
     };
 };
