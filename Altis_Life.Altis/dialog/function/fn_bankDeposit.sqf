@@ -7,6 +7,14 @@
     Figure it out.
 */
 private ["_value"];
+ 
+_depoAll = [_this,0,0] call BIS_fnc_param;
+if(_depoAll == 1) then {
+	_value = CASH;
+} else {
+	_value = parseNumber(ctrlText 2702);
+};
+
 _value = parseNumber(ctrlText 2702);
 
 //Series of stupid checks

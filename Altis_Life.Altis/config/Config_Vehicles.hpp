@@ -12,6 +12,215 @@ class CarShops {
     *   Independent Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_GUER
     *   Civilian Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_CIV
     */
+	
+	class bm_car1 {
+        side = "civ";
+		license[] = {"bmi1"};
+        vehicles[] = {
+            { "B_Quadbike_01_F", { "", "", -1 } },
+            { "C_Hatchback_01_F", { "", "", -1 } },
+            { "C_Offroad_01_F", { "", "", -1 } },
+            { "C_SUV_01_F", { "", "", -1 } },
+            { "C_Hatchback_01_sport_F", { "", "", -1 } },
+			{ "O_MRAP_02_hmg_F", { "", "", -1 } },
+			{ "I_MRAP_03_F", { "", "", -1 } },
+			{ "I_MRAP_03_hmg_F", { "", "", -1 } },
+            { "C_Van_01_transport_F", { "", "", -1 } }
+        };
+    };
+	
+	class bm_car2 {
+        side = "civ";
+		license[] = {"bmi2"};
+        vehicles[] = {
+            { "B_Quadbike_01_F", { "", "", -1 } },
+            { "C_Hatchback_01_F", { "", "", -1 } },
+            { "C_Offroad_01_F", { "", "", -1 } },
+            { "C_SUV_01_F", { "", "", -1 } },
+            { "C_Hatchback_01_sport_F", { "", "", -1 } },
+			{ "O_MRAP_02_hmg_F", { "", "", -1 } },
+			{ "I_MRAP_03_F", { "", "", -1 } },
+			{ "I_MRAP_03_hmg_F", { "", "", -1 } },
+            { "C_Van_01_transport_F", { "", "", -1 } }
+        };
+    };
+	
+	class bm_car3 {
+        side = "civ";
+		license[] = {"bmi3"};
+        vehicles[] = {
+            { "B_Quadbike_01_F", { "", "", -1 } },
+            { "C_Hatchback_01_F", { "", "", -1 } },
+            { "C_Offroad_01_F", { "", "", -1 } },
+            { "C_SUV_01_F", { "", "", -1 } },
+            { "C_Hatchback_01_sport_F", { "", "", -1 } },
+			{ "O_MRAP_02_hmg_F", { "", "", -1 } },
+			{ "I_MRAP_03_F", { "", "", -1 } },
+			{ "I_MRAP_03_hmg_F", { "", "", -1 } },
+            { "C_Van_01_transport_F", { "", "", -1 } }
+        };
+    };
+	
+	class bm_car4 {
+        side = "civ";
+		license[] = {"bmi4"};
+        vehicles[] = {
+            { "B_Quadbike_01_F", { "", "", -1 } },
+            { "C_Hatchback_01_F", { "", "", -1 } },
+            { "C_Offroad_01_F", { "", "", -1 } },
+            { "C_SUV_01_F", { "", "", -1 } },
+            { "C_Hatchback_01_sport_F", { "", "", -1 } },
+			{ "O_MRAP_02_hmg_F", { "", "", -1 } },
+			{ "I_MRAP_03_F", { "", "", -1 } },
+			{ "I_MRAP_03_hmg_F", { "", "", -1 } },
+            { "C_Van_01_transport_F", { "", "", -1 } }
+        };
+    };
+	
+	class bm_car5 {
+        side = "civ";
+		license[] = {"bmi5"};
+        vehicles[] = {
+            { "B_Quadbike_01_F", { "", "", -1 } },
+            { "C_Hatchback_01_F", { "", "", -1 } },
+            { "C_Offroad_01_F", { "", "", -1 } },
+            { "C_SUV_01_F", { "", "", -1 } },
+            { "C_Hatchback_01_sport_F", { "", "", -1 } },
+			{ "O_MRAP_02_hmg_F", { "", "", -1 } },
+			{ "I_MRAP_03_F", { "", "", -1 } },
+			{ "I_MRAP_03_hmg_F", { "", "", -1 } },
+            { "C_Van_01_transport_F", { "", "", -1 } }
+        };
+    };
+	
+	class bm_jet1 {
+        side = "civ";
+		license[] = {"bmi1"};
+        vehicles[] = {
+            { "C_Plane_Civil_01_F", { "", "", -1 } },
+            { "C_Plane_Civil_01_racing_F", { "", "", -1 } }
+        };
+    };
+	
+	class bm_jet2 {
+        side = "civ";
+		license[] = {"bmi2"};
+        vehicles[] = {
+            { "C_Plane_Civil_01_F", { "", "", -1 } },
+            { "C_Plane_Civil_01_racing_F", { "", "", -1 } }
+        };
+    };
+	
+	class bm_jet3 {
+        side = "civ";
+		license[] = {"bmi3"};
+        vehicles[] = {
+            { "C_Plane_Civil_01_F", { "", "", -1 } },
+			{ "B_T_VTOL_01_vehicle_blue_F", { "", "", -1 } },
+            { "C_Plane_Civil_01_racing_F", { "", "", -1 } }
+        };
+    };
+	
+	class bm_jet4 {
+        side = "civ";
+		license[] = {"bmi4"};
+        vehicles[] = {
+            { "C_Plane_Civil_01_F", { "", "", -1 } },
+			{ "B_T_VTOL_01_vehicle_blue_F", { "", "", -1 } },
+            { "C_Plane_Civil_01_racing_F", { "", "", -1 } }
+        };
+    };
+	
+	class bm_jet5 {
+        side = "civ";
+		license[] = {"bmi5"};
+        vehicles[] = {
+            { "C_Plane_Civil_01_F", { "", "", -1 } },
+			{ "B_T_VTOL_01_vehicle_blue_F", { "", "", -1 } },
+			{ "B_T_VTOL_01_infantry_blue_F", { "", "", -1 } },
+            { "C_Plane_Civil_01_racing_F", { "", "", -1 } }
+        };
+    };
+	
+    class bm_heli1 {
+        side = "civ";
+		license[] = {"bmi1"};
+        vehicles[] = {
+            { "I_Heli_Transport_02_F", { "", "", -1 } },
+			{ "C_Heli_Light_01_civil_F", { "", "", -1 } },
+            { "B_Heli_Light_01_F", { "", "", -1 } },
+            { "I_Heli_light_03_unarmed_F", { "", "", -1 } },
+			{ "O_Heli_Transport_04_box_F", { "", "", -1 } },
+            { "O_Heli_Light_02_unarmed_F", { "", "", -1 } }
+        };
+    };
+
+	class bm_heli2 {
+        side = "civ";
+		license[] = {"bmi2"};
+        vehicles[] = {
+            { "I_Heli_Transport_02_F", { "", "", -1 } },
+			{ "C_Heli_Light_01_civil_F", { "", "", -1 } },
+            { "B_Heli_Light_01_F", { "", "", -1 } },
+			{ "B_Heli_Transport_03_black_F", { "", "", -1 } },
+            { "I_Heli_light_03_unarmed_F", { "", "", -1 } },
+            { "O_Heli_Light_02_unarmed_F", { "", "", -1 } },
+			{ "B_Heli_Transport_03_unarmed_F", { "", "", -1 } },
+			{ "B_Heli_Transport_03_unarmed_green_F", { "", "", -1 } },
+			{ "O_Heli_Transport_04_box_F", { "", "", -1 } },
+			{ "B_Heli_Transport_01_camo_F", { "", "", -1 } }
+        };
+    };
+	
+	class bm_heli3 {
+        side = "civ";
+		license[] = {"bmi3"};
+        vehicles[] = {
+            { "I_Heli_Transport_02_F", { "", "", -1 } },
+			{ "C_Heli_Light_01_civil_F", { "", "", -1 } },
+            { "B_Heli_Light_01_F", { "", "", -1 } },
+            { "I_Heli_light_03_unarmed_F", { "", "", -1 } },
+            { "O_Heli_Light_02_unarmed_F", { "", "", -1 } },
+			{ "B_Heli_Transport_03_unarmed_F", { "", "", -1 } },
+			{ "B_Heli_Transport_03_unarmed_green_F", { "", "", -1 } },	
+			{ "O_Heli_Transport_04_box_F", { "", "", -1 } },
+			{ "B_Heli_Transport_01_camo_F", { "", "", -1 } }
+        };
+    };
+	
+	class bm_heli4 {
+        side = "civ";
+		license[] = {"bmi4"};
+        vehicles[] = {
+            { "I_Heli_Transport_02_F", { "", "", -1 } },
+			{ "C_Heli_Light_01_civil_F", { "", "", -1 } },
+            { "B_Heli_Light_01_F", { "", "", -1 } },
+            { "I_Heli_light_03_unarmed_F", { "", "", -1 } },
+            { "O_Heli_Light_02_unarmed_F", { "", "", -1 } },
+			{ "B_Heli_Transport_03_unarmed_F", { "", "", -1 } },
+			{ "B_Heli_Transport_03_unarmed_green_F", { "", "", -1 } },
+			{ "O_Heli_Transport_04_box_F", { "", "", -1 } },
+			{ "I_Heli_light_03_F", { "", "", -1 } },
+			{ "B_Heli_Transport_01_camo_F", { "", "", -1 } }
+        };
+    };
+	
+	class bm_heli5 {
+        side = "civ";
+		license[] = {"bmi5"};
+        vehicles[] = {
+            { "I_Heli_Transport_02_F", { "", "", -1 } },
+			{ "C_Heli_Light_01_civil_F", { "", "", -1 } },
+            { "B_Heli_Light_01_F", { "", "", -1 } },
+            { "I_Heli_light_03_unarmed_F", { "", "", -1 } },
+            { "O_Heli_Light_02_unarmed_F", { "", "", -1 } },
+			{ "B_Heli_Transport_03_unarmed_F", { "", "", -1 } },
+			{ "B_Heli_Transport_03_unarmed_green_F", { "", "", -1 } },
+			{ "O_Heli_Transport_04_box_F", { "", "", -1 } },
+			{ "I_Heli_light_03_F", { "", "", -1 } },
+			{ "B_Heli_Transport_01_camo_F", { "", "", -1 } }
+        };
+    };
     class civ_car {
         side = "civ";
         vehicles[] = {
@@ -464,6 +673,20 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 300;
         conditions = "license_civ_trucking";
         price = 250000;
+        textures[] = {};
+    };
+	
+	class B_T_VTOL_01_vehicle_blue_F {
+        vItemSpace = 5000;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 30000000;
+        textures[] = {};
+    };
+	
+	class B_T_VTOL_01_infantry_blue_F {
+        vItemSpace = 5000;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 25000000;
         textures[] = {};
     };
 

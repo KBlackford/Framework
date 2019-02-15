@@ -8,6 +8,53 @@
 */
 class Licenses {
     //Civilian Licenses
+    class bmcm {
+        variable = "bmcm"
+        displayName = "STR_Blackmarket_BMCM"
+        price = 100000;
+        illegal = false;
+        side = "civ";
+    };
+
+    class bmi1 {
+        variable = "bmi1";
+        displayName = "STR_Blackmarket_Investor_1";
+        price = 2000000;
+        illegal = false;
+        side = "civ";
+    };
+    
+    class bmi2 {
+        variable = "bmi2";
+        displayName = "STR_Blackmarket_Investor_2";
+        price = 6000000;
+        illegal = false;
+        side = "civ";
+    };
+    
+    class bmi3 {
+        variable = "bmi3";
+        displayName = "STR_Blackmarket_Investor_3";
+        price = 10000000;
+        illegal = false;
+        side = "civ";
+    };
+    
+    class bmi4 {
+        variable = "bmi4";
+        displayName = "STR_Blackmarket_Investor_4";
+        price = 14000000;
+        illegal = false;
+        side = "civ";
+    };
+    
+    class bmi5 {
+        variable = "bmi5";
+        displayName = "STR_Blackmarket_Investor_5";
+        price = 20000000;
+        illegal = false;
+        side = "civ";
+    };
     class driver {
         variable = "driver";
         displayName = "STR_License_Driver";
