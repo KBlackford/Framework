@@ -35,4 +35,3 @@ if (LIFE_SETTINGS(getNumber,"player_moneyLog") isEqualTo 1) then {
     };
     publicVariableServer "money_log";
 };
-[] call life_fnc_hudUpdate;
