@@ -6,7 +6,6 @@
     Description:
     Setups the hud for the player?
 */
-/*
 disableSerialization;
 
 cutRsc ["playerHUD", "PLAIN", 2, false];
@@ -21,4 +20,3 @@ cutRsc ["playerHUD", "PLAIN", 2, false];
         [] call life_fnc_hudUpdate;
     };
 };
-*/
