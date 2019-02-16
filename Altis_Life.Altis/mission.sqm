@@ -194,15 +194,21 @@ randomSeed=2639488;
 class ScenarioData
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	author="Tonic and SLG Dev Team";
 	overViewPicture="textures\armalife.jpg";
 	overViewPictureLocked="textures\armalife.jpg";
 	loadScreen="textures\armalife.jpg";
 =======
+=======
+>>>>>>> parent of d6452473... Moving Gold Mine Back to original locations,Admin Island Add
 	author="Tonic";
 	overViewPicture="textures\armalifeLoading.jpg";
 	overViewPictureLocked="textures\armalifeLoading.jpg";
 	loadScreen="textures\armalifeLoading.jpg";
+<<<<<<< HEAD
+>>>>>>> parent of d6452473... Moving Gold Mine Back to original locations,Admin Island Add
+=======
 >>>>>>> parent of d6452473... Moving Gold Mine Back to original locations,Admin Island Add
 	saving=0;
 	respawnDialog=0;
