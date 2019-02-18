@@ -166,6 +166,7 @@ class Life_Client_Core {
         class accType {};
         class actionKeyHandler {};
         class animSync {};
+        class autoMessages {};
         class calWeightDiff {};
         class clearVehicleAmmo {};
         class dropItems {};

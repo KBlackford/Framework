@@ -12,5 +12,6 @@ if (hasInterface) then {
 };
 [] execVM "KRON_Strings.sqf";
 [] execVM "scripts\Status_Bar\init_statusBar.sqf"; // Statusbar﻿
+[] spawn life_fnc_autoMessages; // Message Auto  
 
 StartProgress = true;
