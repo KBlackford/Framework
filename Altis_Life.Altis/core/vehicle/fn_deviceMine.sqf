@@ -134,6 +134,8 @@ for "_i" from 0 to 1 step 0 do {
     _percent = (floor random 100) + 1; //Make sure it's not 0
     //diag_log format ["#### _percent = %1",_percent];
     for "_i" from 0 to count(_cfgResources)-1 do {
+        if (count(_cfgResources) isEqualTo 1) exitWith {
+        };
         private ["_resourcetmp","_prob","_probdiff"];
         _resourcetmp = (_cfgResources select _i) select 0;
         //diag_log format ["#### _mined = %1, _zone = %2",_resourcetmp, _zone];
