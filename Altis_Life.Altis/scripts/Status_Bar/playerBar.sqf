@@ -79,16 +79,16 @@ waitUntil{isNull (findDisplay 38500)};
 		//display the information 
 		((uiNamespace getVariable "statusBar")displayCtrl 55555)ctrlSetStructuredText parseText 
 			format["
-			<t shadow='1' shadowColor='#000000' color='%10'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\players.paa' color='%10'/> %2</t>
-			<t shadow='1' shadowColor='#000000' color='%11'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\polis.paa' color='%11'/> %3</t> 
-			<t shadow='1' shadowColor='#000000' color='%11'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\doktor.paa' color='%11'/> %4</t> 
-			<t shadow='1' shadowColor='#000000' color='%11'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\sivil.paa' color='%11'/> %5</t> 
-			<t shadow='1' shadowColor='#000000' color='%10'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\nakit.paa' color='%10'/> %6</t> 
-			<t shadow='1' shadowColor='#000000' color='%12'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\banka.paa' color='%12'/> %11</t>  
-			<t shadow='1' shadowColor='#000000' color='%10'>FPS: %7</t>
-			<t shadow='1' shadowColor='#000000' color='%10'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\ts3.paa' color='%10'/>slg.ts.nfoservers.com</t>
-			<t shadow='1' shadowColor='#000000' color='%10'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\restart.paa' color='%10'/>Restart: %9:%10</t>
-			<t shadow='1' shadowColor='#000000' color='%10'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\ts3.paa' color='%10'/> </t>",
+			<t shadow='1' shadowColor='#000000' color='#FFFFFF'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\players.paa' color='#FFFFFF'/> %2</t>
+			<t shadow='1' shadowColor='#000000' color='#FFFFFF'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\polis.paa' color='#FFFFFF'/> %3</t> 
+			<t shadow='1' shadowColor='#000000' color='#FFFFFF'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\doktor.paa' color='#FFFFFF'/> %4</t> 
+			<t shadow='1' shadowColor='#000000' color='#FFFFFF'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\sivil.paa' color='#FFFFFF'/> %5</t> 
+			<t shadow='1' shadowColor='#000000' color='#FFFFFF'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\nakit.paa' color='#FFFFFF'/> %6</t> 
+			<t shadow='1' shadowColor='#000000' color='#FFFFFF'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\banka.paa' color='#FFFFFF'/> %11</t>  
+			<t shadow='1' shadowColor='#000000' color='#FFFFFF'>FPS: %7</t>
+			<t shadow='1' shadowColor='#000000' color='#FFFFFF'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\ts3.paa' color='#FFFFFF'/>slg.ts.nfoservers.com</t>
+			<t shadow='1' shadowColor='#000000' color='#FFFFFF'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\restart.paa' color='#FFFFFF'/>Restart: %9:%10</t>
+			<t shadow='1' shadowColor='#000000' color='#FFFFFF'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\ts3.paa' color='#FFFFFF'/> </t>",
 					"%", 
 					_players,
 					_polis,
@@ -96,7 +96,7 @@ waitUntil{isNull (findDisplay 38500)};
 					_sivil,
 					_nakit, 
 					round diag_fps, 
-					format["%1/%2",_xx,_yy],
+					_nakit,
 					_hours,
 					_minutes,
 					_bank
