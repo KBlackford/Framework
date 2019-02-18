@@ -6,7 +6,7 @@
     Description:
     Starts automated mining of resource from the tempest device. Not integrated with percents.
 */
-private ["_vehicle","_resourceZones","_zone","_weight","_resource","_vInv","_itemIndex","_items","_sum","_itemWeight","_isMineral"];
+private ["_vehicle","_resourceZones","_zone","_weight","_resource","_vInv","_itemIndex","_items","_sum","_itemWeight","_isMineral","_cfgResources"];
 _vehicle = param [0,objNull,[objNull]];
 _isMineral = true;
 if (isNull _vehicle) exitWith {};
@@ -57,29 +57,12 @@ for "_i" from 0 to count(_resourceCfg)-1 do {
     _resourceZones = getArray(_curConfig >> "zones");
     _zoneSize = getNumber(_curConfig >> "zoneSize");
 
-    //if (!(_resources select 0 isEqualType [])) then {
-    //    _mined = _resources select 0;
-    //} else {
-    //    _mined = (_resources select 0) select 0;
-    //};
-	
-	if (_resources isEqualTo []) exitWith {}; //Smart guy :O
-    for "_i" from 0 to count (_resources) do {
-        if (count _resources isEqualTo 1) exitWith {
-            if (!((_resources select 0) isEqualType [])) then {
-                _mined = _resources select 0;
-            } else {
-                _mined = (_resources select 0) select 0;
-            };
-        };
-        _resource = (_resources select _i) select 0;
-        _prob = (_resources select _i) select 1;
-        _probdiff = (_resources select _i) select 2;
-        if ((_percent >= _prob) && (_percent <= _probdiff)) exitWith {
-            _mined = _resource;
-        };
+    if (!(_resources select 0 isEqualType [])) then {
+        _mined = _resources select 0;
+    } else {
+        _mined = (_resources select 0) select 0;
     };
-
+    _cfgResources = _resources;
     {
         if ((player distance (getMarkerPos _x)) < _zoneSize) exitWith {
             _zone = _x;
@@ -143,21 +126,43 @@ for "_i" from 0 to 1 step 0 do {
     _vehicle_data = _vehicle getVariable ["Trunk",[[],0]];
     _inv = +(_vehicle_data select 0);
     _space = (_vehicle_data select 1);
-    _itemIndex = [_resource,_inv] call TON_fnc_index;
     _weight = [_vehicle] call life_fnc_vehicleWeight;
     _random = 10 + round((random(10)));
+    
+    //################## Calculate resource by percentage ####################
+
+    _percent = (floor random 100) + 1; //Make sure it's not 0
+    //diag_log format ["#### _percent = %1",_percent];
+    for "_i" from 0 to count(_cfgResources)-1 do {
+        private ["_resourcetmp","_prob","_probdiff"];
+        _resourcetmp = (_cfgResources select _i) select 0;
+        //diag_log format ["#### _mined = %1, _zone = %2",_resourcetmp, _zone];
+        _prob = (_cfgResources select _i) select 1;
+        _probdiff = (_cfgResources select _i) select 2;
+        //diag_log format ["#### _resource = %1, _zone = %2, _prob = %3, _probdiff = %4",_resourcetmp, _zone, _prob, _probdiff];
+        if ((_percent >= _prob) && (_percent <= _probdiff)) exitWith {
+            _resource = _resourcetmp;
+            //diag_log format ["#### _mined = %1, _zone = %2",_resource, _zone];
+        };
+    };
+    //#########################################################################
+    _itemIndex = [_resource,_inv] call TON_fnc_index;
     _sum = [_resource,_random,(_weight select 1),(_weight select 0)] call life_fnc_calWeightDiff; // Get a sum base of the remaining weight..
 
     if (_sum < 1) exitWith {
         titleText[localize "STR_NOTF_DeviceFull","PLAIN"];
         _vehicle setVariable ["mining",nil,true];
     };
+    
+    //diag_log format ["#### _itemIndex = %1",_itemIndex];
 
     if (_itemIndex isEqualTo -1) then {
         _inv pushBack [_resource,_sum];
+        //diag_log format ["####1 _inv = %1",_inv];
     } else {
         _val = (_inv select _itemIndex) select 1;
         _inv set[_itemIndex,[_resource,_val + _sum]];
+        //diag_log format ["####2 _val = %1, _inv = %2",_val, _inv];
     };
 
     if (fuel _vehicle < 0.1) exitWith {

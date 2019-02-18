@@ -114,7 +114,7 @@ Example 2:
             amount = 3;
             zones[] = { "gold_mine" };
             item = "pickaxe";
-            mined[] = { {"goldnuggets",0,5} , { "foolsgold" ,5,95 } };
+            mined[] = { {"foolsgold",0,75} , { "goldnuggets" ,75,100 } };
 			zoneSize = 30;
         };
 

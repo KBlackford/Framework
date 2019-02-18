@@ -9,8 +9,8 @@
 class Licenses {
     //Civilian Licenses
     class bmcm {
-        variable = "bmcm"
-        displayName = "STR_Blackmarket_BMCM"
+        variable = "bmcm";
+        displayName = "STR_Blackmarket_BMCM";
         price = 100000;
         illegal = false;
         side = "civ";
