@@ -241,7 +241,7 @@ class Life_atm_management {
 			h = safeZoneH * 0.02222223;
 			text = "$STR_ATM_Deposit_All";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])",0.5};
-			onButtonClick = "[1] call life_fnc_bankDepositAll";
+			onButtonClick = "[] call life_fnc_bankDepositAll";
 			class HitZone
 			{
 				top = 0.0;
