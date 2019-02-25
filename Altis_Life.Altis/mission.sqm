@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1357;
+		nextID=1384;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9008.0225,891.11548,15238.396};
-		dir[]={-0.76181853,-0.64405674,-0.069558233};
-		up[]={-0.6413936,0.76497108,-0.058562774};
-		aside[]={-0.090927467,-6.3977495e-008,0.9958626};
+		pos[]={2317.5579,61.448097,13740.161};
+		dir[]={-0.28859618,-0.3752231,0.88088924};
+		up[]={-0.11682697,0.92692572,0.356594};
+		aside[]={0.95031595,3.6567144e-007,0.31134218};
 	};
 };
 binarizationWanted=0;
@@ -73,13 +73,15 @@ addons[]=
 	"A3_Structures_F_Households_House_Big01",
 	"A3_Structures_F_Naval_Piers",
 	"A3_Rocks_F_Blunt",
-	"A3_Rocks_F_Sharp"
+	"A3_Rocks_F_Sharp",
+	"A3_Boat_F_Jets_Carrier_01",
+	"A3_Boat_F_Destroyer_Destroyer_01"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=18;
+		items=20;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -203,6 +205,20 @@ class AddonsMetaData
 		{
 			className="A3_Rocks_F";
 			name="Arma 3 - Rocks and Stones";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item18
+		{
+			className="A3_Boat_F_Jets";
+			name="Arma 3 Jets - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item19
+		{
+			className="A3_Boat_F_Destroyer";
+			name="Arma 3 Jets - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -330,7 +346,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1049;
+		items=1057;
 		class Item0
 		{
 			dataType="Marker";
@@ -5081,6 +5097,7 @@ class Mission
 				angles[]={0,3.0901928,6.2826972};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -5088,7 +5105,6 @@ class Mission
 			};
 			id=282;
 			type="Land_CashDesk_F";
-			atlOffset=1.1842289;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -16027,6 +16043,7 @@ class Mission
 				angles[]={0,2.3506639,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -16034,7 +16051,6 @@ class Mission
 			};
 			id=544;
 			type="Land_CashDesk_F";
-			atlOffset=0.47982728;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24441,7 +24457,6 @@ class Mission
 			};
 			id=746;
 			type="Land_CashDesk_F";
-			atlOffset=0.20866203;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24475,13 +24490,13 @@ class Mission
 				angles[]={0,2.7419298,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=747;
 			type="Land_CashDesk_F";
-			atlOffset=0.56286049;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24635,13 +24650,13 @@ class Mission
 				angles[]={0,6.0063586,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=751;
 			type="Land_CashDesk_F";
-			atlOffset=0.3939209;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24924,7 +24939,6 @@ class Mission
 			};
 			id=758;
 			type="Land_CashDesk_F";
-			atlOffset=0.19405365;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -31675,6 +31689,7 @@ class Mission
 						angles[]={0,5.2196856,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -31683,7 +31698,6 @@ class Mission
 					};
 					id=984;
 					type="C_man_1";
-					atlOffset=0.45298624;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -31726,7 +31740,6 @@ class Mission
 					};
 					id=985;
 					type="C_man_polo_3_F";
-					atlOffset=0.14582825;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -32696,6 +32709,7 @@ class Mission
 						angles[]={0,0.0679636,6.2826972};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -32704,7 +32718,6 @@ class Mission
 					};
 					id=1008;
 					type="C_man_p_fugitive_F_asia";
-					atlOffset=1.2672386;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33202,6 +33215,7 @@ class Mission
 						angles[]={0,0.53849125,6.2823396};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -33210,7 +33224,6 @@ class Mission
 					};
 					id=1020;
 					type="C_man_1";
-					atlOffset=0.51165199;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -34862,7 +34875,6 @@ class Mission
 					};
 					id=1065;
 					type="C_Nikos_aged";
-					atlOffset=0.22426224;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -34896,6 +34908,7 @@ class Mission
 						angles[]={0,6.1261058,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
@@ -34904,7 +34917,6 @@ class Mission
 					};
 					id=1067;
 					type="C_Nikos_aged";
-					atlOffset=0.57194901;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35064,6 +35076,7 @@ class Mission
 						angles[]={0,2.8397205,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
@@ -35072,7 +35085,6 @@ class Mission
 					};
 					id=1075;
 					type="C_Nikos_aged";
-					atlOffset=0.42167664;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35367,7 +35379,6 @@ class Mission
 					};
 					id=1089;
 					type="C_Nikos_aged";
-					atlOffset=0.20879364;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -42139,9 +42150,676 @@ class Mission
 			position[]={2475.156,74.939003,22431.555};
 			name="Admin_Island_Car_Spawn_Tony";
 			type="Empty";
-			angle=175.17194;
+			angle=175.17191;
 			id=1356;
 			atlOffset=-0.00019073486;
+		};
+		class Item1049
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=19;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8573.1602,96.894371,25159.443};
+						angles[]={0.18067499,4.9885001,6.1861577};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="cop_20";
+						description="Public Slot - Cop 1 JOIN TEAMSPEAK:173.234.27.145:10021";
+						isPlayable=1;
+					};
+					id=1358;
+					type="B_RangeMaster_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8578.1602,96.640274,25157.795};
+						angles[]={0.25311917,4.9803491,6.111557};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="cop_21";
+						description="Public Slot - Cop 2 JOIN TEAMSPEAK:173.234.27.145:10021";
+						isPlayable=1;
+					};
+					id=1359;
+					type="B_RangeMaster_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8568.1602,97.88295,25157.795};
+						angles[]={0.15475227,4.8629413,6.1571898};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="cop_22";
+						description="WhiteListed - Cop 3";
+						isPlayable=1;
+					};
+					id=1360;
+					type="B_RangeMaster_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8583.1602,96.375931,25155.059};
+						angles[]={0.25311893,4.9803491,6.0793886};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="cop_23";
+						description="WhiteListed - Cop 4";
+						isPlayable=1;
+					};
+					id=1361;
+					type="B_RangeMaster_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8563.1602,98.913971,25155.059};
+						angles[]={0.11153574,4.9803491,6.172967};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="cop_24";
+						description="WhiteListed - Cop 5";
+						isPlayable=1;
+					};
+					id=1362;
+					type="B_RangeMaster_F";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8588.6719,95.292046,25151.945};
+						angles[]={0.015994642,4.9803491,6.0819468};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="cop_25";
+						description="WhiteListed - Cop 6";
+						isPlayable=1;
+					};
+					id=1363;
+					type="B_RangeMaster_F";
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8559.8096,99.022697,25157.398};
+						angles[]={0.11153574,4.9803491,6.172967};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="cop_26";
+						description="WhiteListed - Cop 7";
+						isPlayable=1;
+					};
+					id=1364;
+					type="B_RangeMaster_F";
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8575.9307,95.854919,25162.324};
+						angles[]={0.25311917,4.9803491,6.111557};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="cop_27";
+						description="WhiteListed - Cop 8";
+						isPlayable=1;
+					};
+					id=1365;
+					type="B_RangeMaster_F";
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8588.0615,95.241844,25155.527};
+						angles[]={0.22163208,4.9803491,6.0526891};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="cop_28";
+						description="WhiteListed - Cop 9";
+						isPlayable=1;
+					};
+					id=1366;
+					type="B_RangeMaster_F";
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8578.0879,97.408798,25152.393};
+						angles[]={0.071876638,4.9803491,6.1861567};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="cop_29";
+						description="WhiteListed - Cop 10";
+						isPlayable=1;
+					};
+					id=1367;
+					type="B_RangeMaster_F";
+				};
+				class Item10
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8568.3994,97.029327,25162.65};
+						angles[]={6.1914439,4.9803491,6.1310372};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="cop_30";
+						description="WhiteListed - Cop 11";
+						isPlayable=1;
+					};
+					id=1368;
+					type="B_RangeMaster_F";
+				};
+				class Item11
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8582.2803,96.694107,25151.414};
+						angles[]={0.071875811,4.9803491,6.0263209};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="cop_31";
+						description="WhiteListed - Cop 12";
+						isPlayable=1;
+					};
+					id=1369;
+					type="B_RangeMaster_F";
+				};
+				class Item12
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8562.9443,98.364365,25159.313};
+						angles[]={0.15475266,4.9803491,6.1297355};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="cop_32";
+						description="WhiteListed - Cop 13";
+						isPlayable=1;
+					};
+					id=1370;
+					type="B_RangeMaster_F";
+					atlOffset=7.6293945e-006;
+				};
+				class Item13
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8586.7178,95.741585,25148.891};
+						angles[]={0.015998369,5.1804862,6.0793886};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="cop_33";
+						description="WhiteListed - Cop 14";
+						isPlayable=1;
+					};
+					id=1371;
+					type="B_RangeMaster_F";
+					atlOffset=7.6293945e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item14
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8564.2061,97.669922,25162.691};
+						angles[]={6.2432065,4.9803491,6.1297355};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="cop_34";
+						description="WhiteListed - Cop 15";
+						isPlayable=1;
+					};
+					id=1372;
+					type="B_RangeMaster_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item15
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8593.1602,94.469978,25145.607};
+						angles[]={0.011995304,4.9803491,6.0819468};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="cop_35";
+						description="WhiteListed - SWAT Reserved Slot";
+						isPlayable=1;
+					};
+					id=1373;
+					type="B_RangeMaster_F";
+					atlOffset=7.6293945e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item16
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8582.7285,95.76548,25157.764};
+						angles[]={0.25311893,4.9803491,6.0793886};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="cop_36";
+						description="WhiteListed - SWAT Reserved Slot";
+						isPlayable=1;
+					};
+					id=1374;
+					type="B_RangeMaster_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item17
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8577.4766,96.239716,25159.801};
+						angles[]={0.25311917,4.9803491,6.111557};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="cop_37";
+						description="WhiteListed - ADTF Reserved Slot";
+						isPlayable=1;
+					};
+					id=1375;
+					type="B_RangeMaster_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item18
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8567.707,97.554123,25160.207};
+						angles[]={0.18067499,4.9803491,6.1310368};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="cop_38";
+						description="WhiteListed - ADTF Reserved Slot";
+						isPlayable=1;
+					};
+					id=1376;
+					type="B_RangeMaster_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1357;
+		};
+		class Item1050
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1968.167,-2.5205536,13687.52};
+				angles[]={0,3.1592066,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1377;
+			type="Land_Carrier_01_base_F";
+			atlOffset=167.63844;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1051
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15095.021,-67.608871,13525.352};
+				angles[]={0.093064934,1.6528796,0.17809267};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1378;
+			type="Land_Carrier_01_base_F";
+			atlOffset=-0.87676239;
+		};
+		class Item1052
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15003.887,-74.463234,13531.86};
+				angles[]={0,1.6528796,5.8535647};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1379;
+			type="Land_Carrier_01_base_F";
+			atlOffset=10.208817;
+		};
+		class Item1053
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14689.462,-32.624092,10553.611};
+				angles[]={6.1940885,4.9112101,6.0781093};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1380;
+			type="Land_Destroyer_01_base_F";
+			atlOffset=-19.425228;
+		};
+		class Item1054
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14695.895,-30.762993,10555.168};
+				angles[]={6.0870719,4.9112101,5.9602356};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1381;
+			type="Land_Destroyer_01_base_F";
+			atlOffset=-16.226761;
+		};
+		class Item1055
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2282.7109,0.00028991699,13931.312};
+				angles[]={0,3.9546716,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1382;
+			type="Land_Destroyer_01_base_F";
+			atlOffset=141.592;
+		};
+		class Item1056
+		{
+			dataType="Marker";
+			position[]={1947.4399,-171.51645,13644.744};
+			name="ang_base_1";
+			text="ADTF Aircraft Carrier";
+			type="mil_box";
+			colorName="Color4_FD_F";
+			id=1383;
+			atlOffset=0.013259888;
 		};
 	};
 };
