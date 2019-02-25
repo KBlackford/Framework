@@ -86,7 +86,7 @@ waitUntil{isNull (findDisplay 38500)};
 			<t shadow='1' shadowColor='#000000' color='#FFFFFF'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\nakit.paa' color='#FFFFFF'/> %6</t> 
 			<t shadow='1' shadowColor='#000000' color='#FFFFFF'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\banka.paa' color='#FFFFFF'/> %11</t>  
 			<t shadow='1' shadowColor='#000000' color='#FFFFFF'>FPS: %7</t>
-			<t shadow='1' shadowColor='#000000' color='#FFFFFF'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\ts3.paa' color='#FFFFFF'/>slg.ts.nfoservers.com</t>
+			<t shadow='1' shadowColor='#000000' color='#FFFFFF'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\ts3.paa' color='#FFFFFF'/>ts.SpearlineGaming.com</t>
 			<t shadow='1' shadowColor='#000000' color='#FFFFFF'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\restart.paa' color='#FFFFFF'/>Restart: %9:%10</t>
 			<t shadow='1' shadowColor='#000000' color='#FFFFFF'><img size='1.6'  shadowColor='#000000' image='scripts\status_bar\images\ts3.paa' color='#FFFFFF'/> </t>",
 					"%", 

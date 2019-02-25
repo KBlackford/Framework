@@ -9,8 +9,8 @@
 [] spawn {  
     // Add a line in this array to add a message  
     _messages = [  
-        "Welcome to SpearLine Gaming. Enjoy your Stay!<br/> <t color=	'#e32828' size='1.5'>https://slgaltislife.enjin.com/</t>",  
-        "Teamspeak Address:<br/><t color='#e32828' size='1.5'>slg.ts.nfoservers.com</t>"  
+        "Welcome to SpearLine Gaming. Enjoy your Stay!<br/> <t color=	'#e32828' size='1.5'>http://SpearlineGaming.com/</t>",  
+        "Teamspeak Address:<br/><t color='#e32828' size='1.5'>ts.SpearlineGaming.com</t>"  
     ];  
 
     _refreshTime = 600; // Time between each message (in seconds)  
