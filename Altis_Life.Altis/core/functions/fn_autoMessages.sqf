@@ -19,7 +19,7 @@
     while {true} do {  
         _count = count _messages;  
         _message = _messages select _i;  
-        hint parseText format["<t color='#0000cc' size='3'>Spearline</t><br/><br/><t color='#c45454'size='3'>Gaming</t><br/><br/><img shadown='false' size='6' image='textures\armalife.jpg'/><br/><br/>%1", _message];  
+        hint parseText format["<t color='#0000cc' size='3'>Spearline</t><br/><br/><t color='#c45454'size='3'>Gaming</t><br/><br/><img shadow='false' size='6' image='textures\armalife.jpg'/><br/><br/>%1", _message];  
         sleep _refreshTime;  
         if (_i == (_count - 1)) then {  
             _i = 0;  
